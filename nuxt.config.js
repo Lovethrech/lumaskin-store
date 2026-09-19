@@ -1,0 +1,1 @@
+export default defineNuxtConfig({css:['~/assets/css/main.css'],devtools:{enabled:false},runtimeConfig:{databaseUrl:process.env.DATABASE_URL||''},app:{head:{title:'LumaSkin | Simple rituals, luminous skin',meta:[{name:'description',content:'A glassmorphic skincare storefront and product-management experience.'},{name:'theme-color',content:'#f2ded5'}]}}})

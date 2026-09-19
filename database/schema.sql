@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS products(id SERIAL PRIMARY KEY,name TEXT NOT NULL,category TEXT NOT NULL,skin TEXT,price NUMERIC(10,2) NOT NULL,shade TEXT DEFAULT 'rose',icon TEXT DEFAULT '✦',benefit TEXT,ingredient TEXT,published BOOLEAN DEFAULT true,created_at TIMESTAMPTZ DEFAULT NOW());

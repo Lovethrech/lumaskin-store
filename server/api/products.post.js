@@ -1,0 +1,1 @@
+import{create}from'../utils/store.js';export default defineEventHandler(async event=>{const body=await readBody(event);if(!body?.name||!body?.price)throw createError({statusCode:400,statusMessage:'Name and price are required.'});return{product:await create(body)}})
